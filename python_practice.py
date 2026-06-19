@@ -504,26 +504,63 @@
 
 #18/06/2026
 
-#lists
+# #lists
+#numbers=[]    #reading
+# numbers=[10,5,7,2,1]  #reading and initialization
 
-numbers=[10,5,7,2,1]
-
-print(numbers)
-print(type(numbers))
-#accessing list elements
-print(numbers[0])
-print(numbers[1])
-print(numbers[2])
-print(numbers[3])
-print(numbers[4])
+# print(numbers)
+# print(type(numbers))
+# #accessing list elements
+# print(numbers[0])
+# print(numbers[1])
+# print(numbers[2])
+# print(numbers[3])
+# print(numbers[4])
 # print(numbers[5])
 
-numbers[0]=100
-print(numbers)
+# numbers[0]=100  #writing an element
+# print(numbers)
+
+# numbers=[10,5,7,2,1]
+# print("Original list contents:",numbers)#Printing original list contents
+# numbers[0]=111
+# print("New list  contents:",numbers)  #Current list contents 
+
+# print("Original list contents:",numbers)  #Printing original list contents 
+# numbers[1]=numbers[4]  #copying value of the fifth element to the second
+# print("New list  contents:",numbers)  #Printing current list contents
+
+# print(numbers)
+# print(len(numbers))
+
+# del numbers[1]
+
+# print(numbers)
+# print(len(numbers))
+
+#negative indexing in lists
+# numbers=[111,7,2,1]
+# print(numbers[-1])
+# print(numbers[-2])
+# print(numbers[-4])
+# print(numbers[len(numbers)*-1])
+
+hat=[1,2,3,4,5]
+
+# print(len(hat))
+
+# del hat[len(hat)-1]
+# print(hat)
+user=int(input("Enter a number:"))
+hat[int(len(hat)//2)]=user  #floor division
+print(hat)
 
 
 
-    
+
+
+
+
                     
 
 
