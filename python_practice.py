@@ -521,6 +521,7 @@
 # numbers[0]=100  #writing an element
 # print(numbers)
 
+#19/06/2026  Friday
 # numbers=[10,5,7,2,1]
 # print("Original list contents:",numbers)#Printing original list contents
 # numbers[0]=111
@@ -545,15 +546,74 @@
 # print(numbers[-4])
 # print(numbers[len(numbers)*-1])
 
-hat=[1,2,3,4,5]
+# hat=[1,2,3,4,5]
 
 # print(len(hat))
 
 # del hat[len(hat)-1]
 # print(hat)
-user=int(input("Enter a number:"))
-hat[int(len(hat)//2)]=user  #floor division
-print(hat)
+# user=int(input("Enter a number:"))
+# hat[int(len(hat)//2)]=user  #floor division
+# print(hat)
+
+#22/06/2026   Monday
+
+# list functions
+# print([1,2]+[3])
+
+#append()
+# list=[5,4,3,2,1]
+# print(list)
+# print(f'Length of List:{len(list)}')
+# list.append(6)
+# print(list)
+# print(f'Length of List:{len(list)}')
+
+#insert(ind,element)
+# numbers=[111,7,2,1]
+# print(len(numbers))
+# print(numbers)
+
+# numbers.append(4)
+# print(len(numbers))
+# print(numbers)
+
+# numbers.insert(0,222)
+# print(len(numbers))
+# print(numbers)
+
+#traversal & iteration
+
+# list1=[1,2,3,4,5,6,7,8,9,10]
+# for i in range(len(list1)):
+#     print(list1[i])
+
+# list=[]
+# for i in range(1,11):
+#     # list.insert(i,i+1)
+#     list.append(i)
+# print(list)
+
+# list=[]
+# count=1
+# while count<=10:
+#     list.append(count)
+#     count+=1
+# print(list)
+
+# list=[10,20,30,40,50,60,70,80,90,100]
+# for i in range(len(list)):
+#     list[i]+=1
+# print(list)
+
+    
+
+
+
+
+
+
+
 
 
 
