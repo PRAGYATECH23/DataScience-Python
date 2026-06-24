@@ -602,15 +602,39 @@
 # print(list)
 
 # list=[10,20,30,40,50,60,70,80,90,100]
-# for i in range(len(list)):
+# for i in range(10):
 #     list[i]+=1
 # print(list)
 
-    
+# my_list=[10,20,30,40,50,60,70,80,90,100]
+# #Print the sum of all the elements from the list
+# sum=0
+# # for i in range(len(my_list)):
+# #     sum+=my_list[i]
+# for element in my_list:
+#     sum+=element
+# print("Sum:",sum)
 
+#copying a variable into another variable
+# a=10
+# b=20
+# print("a:",a)
+# print("b:",b)
 
+# a,b=b,a
 
+# print("a:",a)
+# print("b:",b)
 
+# my_list=[10,1,8,3,5]
+# print(my_list)
+# my_list[0],my_list[4]=my_list[4],my_list[0]
+# my_list[1],my_list[3]=my_list[3],my_list[1]
+# print(my_list)
+
+# bubble sort
+# take two adjacent elments
+# if 1st element is grater then second swap otherwise move ahead
 
 
 
