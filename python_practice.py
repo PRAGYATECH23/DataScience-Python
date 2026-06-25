@@ -640,6 +640,23 @@
 
 #25/06/2026  Thursday
 
+#BUBBLE SORT
+
+# my_list=[8,10,6,2,4]
+# print(my_list)
+# count=0
+# for index1 in range(len(my_list)-1):
+#     # for index in range(len(my_list)-1):
+#     for index in range(len(my_list)-1-index1):   #efficient case
+#         count+=1
+#         if my_list[index] > my_list[index+1]:
+            
+#             my_list[index] , my_list[index+1] = my_list[index+1] , my_list[index]
+# print(my_list)
+# print("My run has run for:",count,"times")
+
+#ASSIGNMENT PROBLEM 1
+
 beatles=[]
 beatles.append("John Lennon")
 beatles.append("Paul McCartney")
@@ -661,20 +678,7 @@ beatles.insert(0,"Ringo Starr")
 print(beatles)
 
 
-#BUBBLE SORT
 
-# my_list=[8,10,6,2,4]
-# print(my_list)
-# count=0
-# for index1 in range(len(my_list)-1):
-#     # for index in range(len(my_list)-1):
-#     for index in range(len(my_list)-1-index1):   #efficient case
-#         count+=1
-#         if my_list[index] > my_list[index+1]:
-            
-#             my_list[index] , my_list[index+1] = my_list[index+1] , my_list[index]
-# print(my_list)
-# print("My run has run for:",count,"times")
 
 
 
