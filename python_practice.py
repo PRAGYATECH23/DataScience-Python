@@ -740,18 +740,60 @@ length=x
 -1*(index+1
 )'''
 
+# #Reversing the order of list
+# lst=[5,3,1,2,4]
+# print(len(lst)//2)
+# print(lst)
+# for i in range(len(lst)//2):  #i for index
+#     # lst[i],lst[(-1)*(i+1)]=lst[(-1)*(i+1)],lst[i]
+#     lst[i],lst[len(lst)-(i+1)]=lst[len(lst)-(i+1)],lst[i]
+# print(lst)
 
-lst=[5,3,1,2,4]
-print(len(lst)//2)
-print(lst)
-for i in range(len(lst)//2):
-    # lst[i],lst[(-1)*(i+1)]=lst[(-1)*(i+1)],lst[i]
-    lst[i],lst[len(lst)-(i+1)]=lst[len(lst)-(i+1)],lst[i]
+#29/06/2026   Monday
 
-    
-print(lst)
+# lst=["D","F","Z","a"," "]
+# lst.sort()
+# print(lst)
 
-        
+# print("B">"b")
+
+# a=3
+# b=1
+# c=2
+# lst=[a,c,b]
+# lst.sort()
+# print(lst)
+
+# a="A"
+# b="B"
+# c="C"
+# d=" "
+# lst=[a,b,c,d]
+# lst.reverse()
+# print(lst)
+
+# lst_1=[1]
+# lst_2=lst_1   #reference copy
+# lst_1[0]=2
+# print(lst_2)
+
+# lst_1=[1,2,3,4]
+# lst_2=lst_1[0:2]
+# lst_1[0]=2
+# print("List1:",lst_1)
+# print("List2:",lst_2)
+
+# my_list=[10,8,6,4,2]
+# new_list=my_list[1:3]
+# print(new_list)
+
+# new_list=my_list[1:-1]
+# print(new_list)
+
+# new_list=my_list[-1:1]
+# print(new_list)
+
+print(ord("A"))
 
 
 
