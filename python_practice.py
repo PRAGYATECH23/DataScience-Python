@@ -793,7 +793,66 @@ length=x
 # new_list=my_list[-1:1]
 # print(new_list)
 
-print(ord("A"))
+# print(ord("A"))
+
+#30/06/2026  Tuesday
+
+# my_list=[10,8,6,4,2]
+# del my_list
+# print(my_list)
+
+# my_list=[0,3,12,8,2]
+# print(5 in my_list)
+# print(5 not in my_list)
+# print(12 in my_list)
+
+# lst = [ 17, 3, 11, 5, 1, 9, 7, 15, 13]
+# largest=lst[0]
+# for i in range(1,len(lst)):
+#     if lst[i]>largest:
+#         largest=lst[i]
+
+# print("largest no.",largest)
+
+# lst = [ 17, 3, 11, 5, 1, 9, 7, 15, 13]
+# largest=0
+# for i in range(len(lst)):
+#     if largest < lst[i]:
+#         largest=lst[i]
+# print("Largest no. ",largest)
+
+# lst = [ 17, 3, 11, 5, 1, 9, 7, 15, 13]
+# largest=lst[0]
+# for element in lst:
+#     if largest < element :
+#         largest=element
+# print("Largest no. ",largest)
+
+# my_list=[17,3,11,5,1,9,7,15,13]
+# for i in range(len(my_list)):
+#     if my_list[i]==5:
+#         print("element 5 is found at:",i)
+#         break
+
+my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+found = -1
+for i in range(len(my_list)):
+    if my_list[i] == 5:
+        found = i
+        break
+if found != -1:
+    print("5 found at index:", found)
+else:
+    print("5 not found")
+
+
+
+
+
+
+
+
+
 
 
 
