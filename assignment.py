@@ -18,15 +18,15 @@ beatles.append("Paul McCartney")
 beatles.append("George Harrison")
 print(beatles)
 
-user=["Stu Sutcliffe","Pete Best"]
-i=0
+
 for i in range(2):
-    beatles.append(user[i])
+    user=input("Add two member of the band:")
+    beatles.append(user)
 
 print(beatles)
 
-del beatles[len(beatles)-1]
-del beatles[len(beatles)-1]
+del beatles[-1]
+del beatles[-1]
 print(beatles)
 
 beatles.insert(0,"Ringo Starr")
