@@ -197,21 +197,74 @@ city="Bhopal"
 # print(len(city))
 # print(len(name))
 
-text=" Hello python World ! "
+#text=" Hello python World ! "
 
-#Case
-print(text.upper())
-print(text.lower())
-print(text.title())
-print(text.capitalize())
+# #Case
+# print(text.upper())
+# print(text.lower())
+# print(text.title())
+# print(text.capitalize())
 
-#Strip Whitespace
-print(text.strip())
+# #Strip Whitespace
+# print(text.strip())
 
-#Search
-print('python' in text)
-print(text.find('python'))
-print(text.count('l'))
+# #Search
+# print('python' in text)
+#print(text.find('python1'))
+# print(text.count('l'))
 
-str="hello how are YOU?"
-print(str.capitalize())
+# str="hello how are YOU?"
+# print(str.capitalize())
+
+#06/07/2026   Monday
+
+# text=" Hello python World ! "
+# #Replace
+# print(text.replace('Python','AI'))
+
+# #Split and Join
+# csv='Rahul,22,Bhopal,Engineer'
+# parts=csv.split(',')
+# print("Parts:",parts)
+# print(parts[0])
+# rejoined='|'.join(parts)
+# print("rejoined:",rejoined)
+
+# #Check content
+# print('hello123'.isalnum())
+# print('hello123*'.isalnum())
+# print('12345'.isdigit())
+# print('Python'.isalpha())
+# print(' '.isspace())
+
+# #Start/end check
+# email='student@gmail.com'
+# #a@b.c
+# print(email.endswith('.com'))
+# print(email.startswith('stu'))
+
+#Multiple assignment in strings
+name,cgpa,rank='Pragya',9.2875,6
+print(name,cgpa,rank)
+
+#Basic
+print(f'Hello,{name}!')
+
+#Format numbers
+print(f'cgpa: {cgpa:.2f}')
+print(f'cgpa: {cgpa:.0f}')  #rounded
+print(f'Count: {1000000:,}')
+
+#Padding and alignment
+print(f'{name:<15}|{cgpa:>8.2f}|Cgpa:{cgpa}')
+
+name="Pragya Sisodiya"
+print(f'{name:<15}|{cgpa:>8.2f}|Cgpa:{cgpa}')
+
+#Expressions inside {}
+price,gst=500,0.18
+print(f'Price:Rs.{price}|GST:Rs.{price*gst:.2f}|Total:Rs.{price*(1+gst):.2f}')
+
+
+
+
