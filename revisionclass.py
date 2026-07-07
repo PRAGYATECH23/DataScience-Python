@@ -244,26 +244,91 @@ city="Bhopal"
 # print(email.startswith('stu'))
 
 #Multiple assignment in strings
-name,cgpa,rank='Pragya',9.2875,6
-print(name,cgpa,rank)
+# name,cgpa,rank='Pragya',9.2875,6
+# print(name,cgpa,rank)
 
-#Basic
-print(f'Hello,{name}!')
+# #Basic
+# print(f'Hello,{name}!')
 
-#Format numbers
-print(f'cgpa: {cgpa:.2f}')
-print(f'cgpa: {cgpa:.0f}')  #rounded
-print(f'Count: {1000000:,}')
+# #Format numbers
+# print(f'cgpa: {cgpa:.2f}')
+# print(f'cgpa: {cgpa:.0f}')  #rounded
+# print(f'Count: {1000000:,}')
 
-#Padding and alignment
-print(f'{name:<15}|{cgpa:>8.2f}|Cgpa:{cgpa}')
+# #Padding and alignment
+# print(f'{name:<15}|{cgpa:>8.2f}|Cgpa:{cgpa}')
 
-name="Pragya Sisodiya"
-print(f'{name:<15}|{cgpa:>8.2f}|Cgpa:{cgpa}')
+# name="Pragya Sisodiya"
+# print(f'{name:<15}|{cgpa:>8.2f}|Cgpa:{cgpa}')
 
-#Expressions inside {}
-price,gst=500,0.18
-print(f'Price:Rs.{price}|GST:Rs.{price*gst:.2f}|Total:Rs.{price*(1+gst):.2f}')
+# #Expressions inside {}
+# price,gst=500,0.18
+# print(f'Price:Rs.{price}|GST:Rs.{price*gst:.2f}|Total:Rs.{price*(1+gst):.2f}')
+
+# If else statement
+
+#Read two numbers
+# number1=int(input("Enter  the first number:"))
+# number2=int(input("Enter the second number:"))
+
+# #Choose the larger
+# if number1>number2:
+#     larger_number=number1
+# else:
+#     larger_number=number2
+
+# #Print the result
+# print("The larger number is:",larger_number)
+
+#Largest of three numbers
+
+# num1=int(input("Enter the first number:"))
+# num2=int(input("Enter the second number:"))
+# num3=int(input("Enter the third number:"))
+
+# largest_number=num3
+
+# if num1>largest_number:
+#     largest_number=num1
+# if num2>largest_number:
+#     largest_number=num2
+
+# print("The largest number is ",largest_number)
+
+# largest_number=max(num1,num2,num3)
+# lowest_number=min(num1,num2,num3)
+
+# print("The largest number is:",largest_number)
+# print("The lowest number is :",lowest_number)
+
+#WHILE LOOP
+# while True:
+#     print("i 'm  stuck inside a loop.")
+
+#Printing largest number
+# largest_number=-9999999
+
+# number=int(input("Enter a number:"))
+
+# while number!=-1:
+#     if number> largest_number:
+#         largest_number=number
+#     number=int(input("Enter a number:"))
+# print("The largest number is:",largest_number)
+
+lowest_number=9999999
+
+number=int(input("Enter a number or type -1 to stop:"))
+
+while number!=-1:
+    if number< lowest_number:
+        lowest_number=number
+    number=int(input("Enter a number or type -1 to stop:"))
+print("The lowest number is:",lowest_number)
+
+
+    
+
 
 
 
