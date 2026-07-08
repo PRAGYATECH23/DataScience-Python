@@ -316,15 +316,121 @@ city="Bhopal"
 #     number=int(input("Enter a number:"))
 # print("The largest number is:",largest_number)
 
-lowest_number=9999999
+# lowest_number=9999999
 
-number=int(input("Enter a number or type -1 to stop:"))
+# number=int(input("Enter a number or type -1 to stop:"))
 
-while number!=-1:
-    if number< lowest_number:
-        lowest_number=number
-    number=int(input("Enter a number or type -1 to stop:"))
-print("The lowest number is:",lowest_number)
+# while number!=-1:
+#     if number< lowest_number:
+#         lowest_number=number
+#     number=int(input("Enter a number or type -1 to stop:"))
+# print("The lowest number is:",lowest_number)
+
+# counter=0
+# while counter <100:
+#     print(counter)
+#     counter+=1
+# print("*************************")
+
+# #For loop
+# for count in range(100):
+#     print(count)
+
+'''
+condition based while loop
+iteration based for loop
+'''
+
+# exit=0
+# while exit!=1:
+#     exit=int(input("Enter a number:"))
+#     print(exit)
+
+# for i in range(10):
+#     print("The value of counter is currently:",i)
+
+# for i in range(2,8):
+#     print("The value of counter is currently:",i)
+
+# for i in range(2,8,3):    #range(start,stop,step)
+#      print("The value of counter is currently:",i)
+
+# for i in range(1,1):    #it will print nothing
+#      print("The value of counter is currently:",i)
+
+# for i in range(2,1):    #range(start,stop,step)
+#     print("The value of counter is currently:",i)
+
+# power=1
+# for expo in range (16):
+#     print("2 to the power of ",expo,"is",power)
+#     power*=2
+
+
+#Break 
+
+# power=1
+# for expo in range (16):
+#     print("2 to the power of ",expo,"is",power)
+#     power*=2
+#     if expo==7:
+#         break
+# print("************mow I am out***********")
+
+# #Continue  (next iteration pr chlo)
+
+# power=1
+# for expo in range (16):
+#     if expo==7:
+#         continue
+#     print("2 to the power of ",expo,"is",power)
+#     power*=2
+# print("************mow I am out***********")
+
+# print("The break instrucions:")
+# for counter in range(1,6):
+#     if counter ==4:
+#         break
+#     print("Inside the loop",counter)
+# print("Outside the loop.")
+
+# print("\nThe continue instrucions:")
+# for counter in range(1,6):
+#     if counter ==4:
+#         continue
+#     print("Inside the loop",counter)
+# print("Outside the loop.")
+
+
+# largest_number=-99999999
+# counter=0
+# while True:
+#     number=int(input("Enter a number or type -1 to end the program:"))
+#     if number==-1:
+#         break
+#     counter+=1
+#     if number>largest_number:
+#         largest_number=number
+#     print(counter)
+# if counter!=0:
+#     print("The largest number is :",largest_number)
+# else:
+#     print("You haven't entered a number.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     
