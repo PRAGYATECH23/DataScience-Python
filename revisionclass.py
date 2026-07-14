@@ -422,7 +422,7 @@ iteration based for loop
 # print(i)
 # print(j)
 
-numbers=[10,5,7,2,1]
+# numbers=[10,5,7,2,1]
 # print(numbers)
 # print(type(numbers))
 
@@ -451,22 +451,190 @@ numbers=[10,5,7,2,1]
 # print(numbers[-3])
 # print(numbers[-4])
 
-a=10
-# print("Variable a:",a)
-print("Address of Variable a in integer:",id(a))
-print("Address of Variable a in hexadecimal:",hex(id(a)))
+# a=10
+# # print("Variable a:",a)
+# print("Address of Variable a in integer:",id(a))
+# print("Address of Variable a in hexadecimal:",hex(id(a)))
 
-print(hex(id(numbers)))
-print(hex(id(numbers[0])))
-print(hex(id(numbers[1])))
-print(hex(id(numbers[2])))
-print(hex(id(numbers[3])))
+# print(hex(id(numbers)))
+# print(hex(id(numbers[0])))
+# print(hex(id(numbers[1])))
+# print(hex(id(numbers[2])))
+# print(hex(id(numbers[3])))
 
 # hat=[1,2,3,4,5]
 # print(len(hat))
 
 # del hat[len(hat)-1]
 # print(hat)
+
+#10/7/2026  Friday
+# #append & insert function
+#list.append(value)
+#list.insert(location,value)
+
+# list=[5,4,3,2,1]
+# print(len(list))
+# print(list)
+
+# list.append(6)
+# print(len(list))
+# print(list)
+
+# list.insert(0,222)
+# print(len(list))
+# print(list)
+
+#Traversing a list
+
+# list1=[1,2,3,4,5,6,7,8,9,10]
+# for index in range(len(list1)):  #i=iterator=index
+#     print(index)
+#     print(list1[index])
+
+# index=0
+# while index<len(list1):
+#     print(list1[index])
+#     index+=1
+
+#Updating a list in loop
+# list=[]
+# for i in range(1,11):
+#     list.append(i)
+# print("list:",list)
+
+# list=[]
+# iterator=1
+# while iterator<11:
+#     list.append(iterator)
+#     iterator+=1
+# print(list)
+
+# list=[]
+# for i in range(21,31):
+#     # list.insert(i,i)
+#     list.append(i)
+# print("list:",list)
+
+# my_list=[10,20,30,40,50,60,70,80,90,100]
+# for index in range(len(my_list)):
+#     my_list[index] += 1
+# print(my_list)
+# sum=0
+# for i in range(len(my_list)):
+#     sum+=my_list[i]
+# print("Sum:",sum)
+
+# for element in my_list:
+#     sum+=element
+# print("sum:",sum)
+
+# index=0
+# for element in my_list:
+#     print("my_list[",index,"]=>",element)
+#     index+=1
+
+#Copying a variable into another variable
+# a=10
+# b=20
+
+# print("a:",a)
+# print("b:",b)
+
+# print("-------------")
+
+# temp=b
+# b=a
+# a=temp
+# print("a:",a)
+# print("b:",b)
+
+#copying/swapping
+# a,b=b,a
+# print("a:",a)
+# print("b:",b)
+
+# my_list=[10,20,30,40,50,60,70,80,90,100]
+# print(my_list)
+# #swap-2nd and 5th values
+
+# my_list[1],my_list[4]=my_list[4],my_list[1]
+# print(my_list)
+
+# lst=[]
+# del lst
+# print(lst)
+
+#bubble sort
+
+# list=[8,10,6,2,4]
+# print(list)
+# count=0
+# for index in range(len(list)-1):
+#     #for index_inner in range(len(list)-1):
+#     for index_inner in range(len(list)-1-index):
+#         count+=1
+#         if list[index_inner]>list[index_inner+1]:
+#             list[index_inner],list[index_inner+1]=list[index_inner+1],list[index_inner]
+
+# print("Sorted List:",list)
+# print("my loop is running for",count,"times")
+
+'''
+Dry Run
+Current list     [8,10,6,2,4]
+
+index(0-3)          0         1          2          3
+index_inner(0-3)    0 1 2 3   0 1 2 3    0 1 2 3    0 1 2 3 
+
+index      index_inner      sorted_list
+0          0                [8,10,6,2,4]  
+           1                [8,6,10,2,4] 
+           2                [8,6,2,10,4]
+           3                [8,6,2,4,10]
+           
+1          0                [6,8,2,4,10]
+           1                [6,2,8,4,10]
+           2                [6,2,4,8,10]
+           3                [6,2,4,8,10]
+           
+2          0                [2,6,4,8,10]
+           1                [2,4,6,8,10]'''
+
+'''best case- sorted list
+worst case -descending order of list
+'''
+list=[1,2,3,4,5]
+print(list)
+count=0
+swapped=False
+for index in range(len(list)-1):
+    #for index_inner in range(len(list)-1):
+    for index_inner in range(len(list)-1-index):
+        count+=1
+        if list[index_inner]>list[index_inner+1]:
+            list[index_inner],list[index_inner+1]=list[index_inner+1],list[index_inner]
+            swapped=True
+    if not swapped:
+        break
+
+print("Sorted List:",list)
+print("my loop is running for",count,"times")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

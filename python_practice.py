@@ -263,7 +263,88 @@
 # print(city[-5])
 # print(city[-6])
 
-# decision making in python
+#Slicing string[start:stop:step]
+# name="Pragya Sisodiya"
+# print(name[0:6])
+# print(name[6:])
+# print(name[:6])
+# print(name[::2])
+# print(name[::-1])
+
+#Length of the string
+# print(len(city))
+# print(len(name))
+
+#text=" Hello python World ! "
+
+# #Case
+# print(text.upper())
+# print(text.lower())
+# print(text.title())
+# print(text.capitalize())
+
+# #Strip Whitespace
+# print(text.strip())
+
+# #Search
+# print('python' in text)
+#print(text.find('python1'))
+# print(text.count('l'))
+
+# str="hello how are YOU?"
+# print(str.capitalize())
+
+#06/07/2026   Monday
+
+# text=" Hello python World ! "
+# #Replace
+# print(text.replace('Python','AI'))
+
+# #Split and Join
+# csv='Rahul,22,Bhopal,Engineer'
+# parts=csv.split(',')
+# print("Parts:",parts)
+# print(parts[0])
+# rejoined='|'.join(parts)
+# print("rejoined:",rejoined)
+
+# #Check content
+# print('hello123'.isalnum())
+# print('hello123*'.isalnum())
+# print('12345'.isdigit())
+# print('Python'.isalpha())
+# print(' '.isspace())
+
+# #Start/end check
+# email='student@gmail.com'
+# #a@b.c
+# print(email.endswith('.com'))
+# print(email.startswith('stu'))
+
+#Multiple assignment in strings
+# name,cgpa,rank='Pragya',9.2875,6
+# print(name,cgpa,rank)
+
+# #Basic
+# print(f'Hello,{name}!')
+
+# #Format numbers
+# print(f'cgpa: {cgpa:.2f}')
+# print(f'cgpa: {cgpa:.0f}')  #rounded
+# print(f'Count: {1000000:,}')
+
+# #Padding and alignment
+# print(f'{name:<15}|{cgpa:>8.2f}|Cgpa:{cgpa}')
+
+# name="Pragya Sisodiya"
+# print(f'{name:<15}|{cgpa:>8.2f}|Cgpa:{cgpa}')
+
+# #Expressions inside {}
+# price,gst=500,0.18
+# print(f'Price:Rs.{price}|GST:Rs.{price*gst:.2f}|Total:Rs.{price*(1+gst):.2f}')
+
+
+# Decision making in python
 # print(2==2)
 # print(2==2.)
 
@@ -319,6 +400,7 @@
 # while True:
 #     print("I 'm stuck inside a loop.")
 
+#Printing largest number
 # largest_number=-99999999
 
 # number =  int(input("Enter a number or type -1 to stop:"))
@@ -328,14 +410,6 @@
 #        largest_number=number
 #     number=int(input("Enter a number or type -1 to stop:"))
 # print("The largest number  is:",largest_number)
-
-# flower=input("Enter a string:")
-# if flower=="Spathiphyllum":
-#     print("Yes-Spathiphyllum is the best plant ever!")
-# elif flower=="spathiphyllum":
-#     print("No, I want a big Spathiphyllum!")
-# else:
-#     print("Spathiphyllum! Not",flower)
 
 #11/06/2026  Thursday
 
@@ -387,49 +461,6 @@
 #     print("Counter:",counter)
 # for counter in range(2,8):
 #     print("Counter:",counter)
-
-# year_num=int(input("Enter the year number:"))
-# if year_num < 1582:
-#     print("Not within the Gregorian calendar period.")
-# elif year_num % 4 != 0:
-#     print(year_num,"is a common year.")
-# elif year_num % 100 != 0:
-#     print(year_num,"is a leap year.")
-# elif year_num % 400 != 0:
-#     print(year_num,"is a common year.")
-# else:
-#     print(year_num,"is a leap year.")
-
-# income=float(input("Enter your income:"))
-
-# if income <= 85528:
-#     tax = (18*.01*income)-(556+.02)
-    
-#     if tax <0:
-#         print("No tax")
-#     else:
-#         print("Tax calculated:",round(tax))
-
-# else:
-#     tax = (14839+.02)+((32*.01)*(income-85528))
-    
-#     if tax <0:
-#         print("No tax")
-#     else:
-#         print("Tax calculated:",round(tax))
-
-# #chatgpt simplification
-# income = float(input("Enter your income: "))
-
-# if income <= 85528:
-#     tax = 0.18 * income - 556.02
-# else:
-#     tax = 14839.02 + 0.32 * (income - 85528)
-
-# if tax < 0:
-#     tax = 0
-
-# print("Tax calculated:", round(tax))
 
 # largest_number=-99999999
 # counter=0
@@ -793,7 +824,7 @@ length=x
 # new_list=my_list[-1:1]
 # print(new_list)
 
-# print(ord("A"))
+# print(ord("A"))     Ascii value
 
 #30/06/2026  Tuesday
 
@@ -834,16 +865,18 @@ length=x
 #         print("element 5 is found at:",i)
 #         break
 
-my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]
-found = -1
-for i in range(len(my_list)):
-    if my_list[i] == 5:
-        found = i
-        break
-if found != -1:
-    print("5 found at index:", found)
-else:
-    print("5 not found")
+# my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+# found = -1
+# for i in range(len(my_list)):
+#     if my_list[i] == 5:
+#         found = i
+#         break
+# if found != -1:
+#     print("5 found at index:", found)
+# else:
+#     print("5 not found")
+
+
 
 
 
