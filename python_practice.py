@@ -876,6 +876,65 @@ length=x
 # else:
 #     print("5 not found")
 
+# list_1=["A","B","C"]
+# list_2=list_1
+# list_3=list_2
+# del list_1[0]
+# del list_2[0]
+# print(list_3)
+
+# list_1=["A","B","C"]
+# list_2=list_1
+# list_3=list_2
+# del list_1[0]
+# del list_2
+# print(list_3)
+
+# list_1=["A","B","C"]
+# list_2=list_1
+# list_3=list_2
+# del list_1[0]
+# del list_2[:]
+# print(list_3)
+
+
+# list_1=["A","B","C"]
+# list_2=list_1[:]
+# list_3=list_2[:]
+# del list_1[0]
+# del list_2[0]
+# print(list_1)
+# print(list_2)
+# print(list_3)
+
+
+#15/07/2026   Wednesday
+
+#List Comprehension
+#row=[]
+# for i in range(8):
+#     row.append("WHITE_PAWN")
+
+# row=["WHITE_PAWN" for i in range(8)]
+# print(row)
+
+# squares=[x**2 for x in range(10)]
+# print(squares)
+
+# # twos=[2**i for i in range(8)]
+# # print(twos)
+
+# odds=[x for x in squares if x%2!=0]
+# print(odds)
+
+# even=[x for x in squares if x%2==0]
+# print(even)
+
+# board=[]
+# for i in range(8):
+#     row=["EMPTY" for i in range(8)]
+#     board.append(row)
+# print(board)
 
 
 
