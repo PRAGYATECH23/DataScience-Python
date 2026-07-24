@@ -936,6 +936,58 @@ length=x
 #     board.append(row)
 # print(board)
 
+# board[0][0]='ROOK'
+# board[0][7]='ROOK'
+# board[7][0]='ROOK'
+# board[7][7]='ROOK'
+
+# board[0][1]='KNIGHT'
+# board[0][6]='KNIGHT'
+# board[7][1]='KNIGHT'
+# board[7][6]='KNIGHT'
+
+# board[0][2]='BISHOP'
+# board[0][5]='BISHOP'
+# board[7][2]='BISHOP'
+# board[7][5]='BISHOP'
+
+# for index in range(len(board)):
+#     print(board[index])
+
+# temps=[[0.0 for h in range(24)] for d in range(31)]
+# #print(temps)
+# random=[35,23,26,38,12,35,23,26,38,12,35,23,26,38,12,35,23,26,38,12,35,23,26,38,12,35,23,26,38,12,10]
+# for index in range(len(temps)):
+#     temps[index][11]=random[index]
+
+# for index in range(len(temps)):
+#     print(temps[index])
+# sum=0
+# for index in range(len(temps)):
+#     sum+=temps[index][11]
+# print("Average temperature:",sum/31)
+# highest_temp=-100
+# for index in range(len(temps)):
+#     for inner_index in range(len(temps[index])):
+#         if highest_temp<temps[index][inner_index]:
+#             highest_temp =temps[index][inner_index]
+# print(highest_temp)
+
+# lowest=100
+
+# for index1 in range(len(temps)):
+#     for inner_index in range(len(temps[index1])):
+#         if lowest>temps[index1][inner_index]:
+#             lowest=temps[index1][inner_index]
+# print(lowest)
+
+rooms=[[[False for r in range(20)] for f in range(15)] for b in range(3)]
+print(len(rooms))
+for building_index in range(len(rooms)):
+    print("Building:",building_index+1)
+    for floor_index in range(len(rooms[building_index])):
+        print("Floor:",floor_index+1)
+        print(rooms[building_index][floor_index])
 
 
 
