@@ -876,41 +876,266 @@ length=x
 # else:
 #     print("5 not found")
 
+# list_1=["A","B","C"]
+# list_2=list_1
+# list_3=list_2
+# del list_1[0]
+# del list_2[0]
+# print(list_3)
+
+# list_1=["A","B","C"]
+# list_2=list_1
+# list_3=list_2
+# del list_1[0]
+# del list_2
+# print(list_3)
+
+# list_1=["A","B","C"]
+# list_2=list_1
+# list_3=list_2
+# del list_1[0]
+# del list_2[:]
+# print(list_3)
 
 
+# list_1=["A","B","C"]
+# list_2=list_1[:]
+# list_3=list_2[:]
+# del list_1[0]
+# del list_2[0]
+# print(list_1)
+# print(list_2)
+# print(list_3)
 
 
+#15/07/2026   Wednesday
 
+#List Comprehension
+#row=[]
+# for i in range(8):
+#     row.append("WHITE_PAWN")
 
+# row=["WHITE_PAWN" for i in range(8)]
+# print(row)
 
+# squares=[x**2 for x in range(10)]
+# print(squares)
 
+# # twos=[2**i for i in range(8)]
+# # print(twos)
 
+# odds=[x for x in squares if x%2!=0]
+# print(odds)
 
+# even=[x for x in squares if x%2==0]
+# print(even)
 
+# board=[]
+# for i in range(8):
+#     row=["EMPTY" for i in range(8)]
+#     board.append(row)
+# print(board)
 
+# board[0][0]='ROOK'
+# board[0][7]='ROOK'
+# board[7][0]='ROOK'
+# board[7][7]='ROOK'
 
+# board[0][1]='KNIGHT'
+# board[0][6]='KNIGHT'
+# board[7][1]='KNIGHT'
+# board[7][6]='KNIGHT'
 
+# board[0][2]='BISHOP'
+# board[0][5]='BISHOP'
+# board[7][2]='BISHOP'
+# board[7][5]='BISHOP'
 
+# for index in range(len(board)):
+#     print(board[index])
 
+# temps=[[0.0 for h in range(24)] for d in range(31)]
+# #print(temps)
+# random=[35,23,26,38,12,35,23,26,38,12,35,23,26,38,12,35,23,26,38,12,35,23,26,38,12,35,23,26,38,12,10]
+# for index in range(len(temps)):
+#     temps[index][11]=random[index]
 
+# for index in range(len(temps)):
+#     print(temps[index])
+# sum=0
+# for index in range(len(temps)):
+#     sum+=temps[index][11]
+# print("Average temperature:",sum/31)
+# highest_temp=-100
+# for index in range(len(temps)):
+#     for inner_index in range(len(temps[index])):
+#         if highest_temp<temps[index][inner_index]:
+#             highest_temp =temps[index][inner_index]
+# print(highest_temp)
 
+# lowest=100
 
+# for index1 in range(len(temps)):
+#     for inner_index in range(len(temps[index1])):
+#         if lowest>temps[index1][inner_index]:
+#             lowest=temps[index1][inner_index]
+# print(lowest)
 
+# rooms=[[[False for r in range(20)] for f in range(15)] for b in range(3)]
+# print(len(rooms))
+# for building_index in range(len(rooms)):
+#     print("Building:",building_index+1)
+#     for floor_index in range(len(rooms[building_index])):
+#         print("Floor:",floor_index+1)
+#         print(rooms[building_index][floor_index])
 
+#22/07/2026  
+#in the second building, on the tenth floor, room 14
+# rooms[1][9][13]=True
 
+# #and release the second room on the fifth floor located in the first building:
+# rooms[0][4][1]=False
 
+# #Check if there are any vacancies on the 15th floor of the third building
 
+# rooms[2][14][0]=True
+# rooms[2][14][2]=True
+# rooms[2][14][4]=True
+# rooms[2][14][6]=True
+# rooms[2][14][8]=True
+# rooms[2][14][10]=True
+# rooms[2][14][16]=True
+# print(rooms[building_index][floor_index])
 
+# temp=-1
+# for  room_index in range(len(rooms[2][14])):
+#     if rooms[2][14][room_index]==False:
+#         temp=room_index
+#         break
+#     #print(rooms[2][14][room_index])
 
+# if temp==-1:
+#     print("No Rooms available!")
+# else:
+#     print(f'{temp+1}th Room is available')
+        
+#23/07/2026  Thursday
 
-                    
+# *******************FUNCTIONS****************************
+'''
+def function_name():
+    function_body
+'''
+'''
+def message():
+    print("Enter a value:")
+    a=(input())
+    print(a)
 
+message()
+message()
+message()
+'''
+'''
+def message():
+    print("Enter next value:")
+    int(input())
 
+print("We start here.")
+message()
+print("The end is here.")
+'''
 
+'''
+print("We start here.")
+message()
+print("The end is here.")
 
+def message():
+    print("Enter next value:")   #NameError
+'''
+'''
+def message():
+    print("Enter a value:")
+message=1
+print(message)
+message()  #TypeError
+'''
+'''
+def message():
+    print("Enter a value:")
+    a=int(input())
+    return
 
+a=message()
+print(message())
+message()
+'''
+'''
+def hi():
+    print("hi")
+hi(5)  #TypeError
+'''
+'''
+def hi(num):   #parameter
+    print("hi")
+hi(5)  #argument
+'''
+'''
+def hello(n):  #defining a function
+    print("Hello,",n)  #body of  function
 
-    
+name=input("Enter your name:")
+hello(name)   #calling the function
+'''
+
+#Parameterized Functions
+'''
+def message(number):
+    print("Enter a number:",number)  #local scope
+number=1234
+message(1)  #global scope
+print(number)
+'''
+'''
+def message(num):
+    print("Num:",num)
+    print("Number:",number)  #local scope
+number=1234
+message(1)  #global scope
+print(number)
+'''
+'''
+def message(what,number):
+    print("Enter",what,"number",number)
+
+message("telephone",11)
+message("price",5)
+message("number","number")
+'''
+'''
+def print_grade(name,marks):
+    grade=""
+    if marks<50:
+        grade="D"
+    elif marks<60:
+        grade="C"
+    elif marks<75:
+        grade="B"
+    elif marks<90:
+        grade="A"
+    elif marks>90:
+        grade="A+"
+    print(f"Hello {name}, Your Grade from {marks} is {grade}!")
+
+print_grade("Pragya",95)
+print_grade("Prachi",85)
+print_grade("Shishir",75)
+print_grade("Riya",65)
+print_grade("Rehan",55)
+print_grade("Rashika",45)
+'''
+
 
 
 
