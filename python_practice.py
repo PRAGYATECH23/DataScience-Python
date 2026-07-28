@@ -989,7 +989,7 @@ length=x
 #         print("Floor:",floor_index+1)
 #         print(rooms[building_index][floor_index])
 
-#22/07/2026  
+#22/07/2026  Wednesday
 #in the second building, on the tenth floor, room 14
 # rooms[1][9][13]=True
 
@@ -1136,6 +1136,166 @@ print_grade("Rehan",55)
 print_grade("Rashika",45)
 '''
 
+#24/07/2026  Friday
+'''
+def introduction(first_name,last_name="NA"):
+    print("Hello,my name is",first_name,last_name)
+
+introduction(first_name="James",last_name="Bond")  #keyword argument passing
+introduction(last_name="Bond",first_name="James")
+introduction("Bond","James")
+introduction("Pragya")
+introduction("Pragya","Sisodiya")
+'''
+'''
+def adding(a,b,c):
+    print(a,"+",b,"+",c,"=",a+b+c)
+
+adding(1,2,3)
+adding(c=1,a=2,b=3)
+adding(3,c=1,b=2)
+#adding(a=1,3,b=2)  #SyntaxError
+#adding(3,a=1,b=2)   #TypeError
+adding(1,2,c=3)
+'''
+'''
+def happy_new_year(wishes=True):
+    print("Three...")
+    print("Two...")
+    print("One...")
+    if not wishes:
+        return "Happy Birthday"
+    print("Happy New Year!")
+
+happy_new_year()
+print(happy_new_year(False))
+'''
+'''
+def boring_function():
+    return 123
+x=boring_function()
+print("The boring function has returned its result.It's:",x)
+'''
+'''
+value=None
+if value is None:
+    print("Sorry,you don't carry any value")
+
+value=input("Enter None:")
+if value=="":
+    value=None
+print(value)
+print(type(value))
+'''
 
 
 
+#28/07/2026  Tuesday
+
+#************TUPLES****************
+
+#immutable,parenthesis,commas is must,all datatypes are acceptable
+'''
+tuple_1=(1,2,4,8)
+tuple_2=1.,.5,.25,.125
+print("tuple_1:",tuple_1)
+print("type of tuple_1:",type(tuple_1))
+print("tuple_2:",tuple_2)
+print("type of tuple_2:",type(tuple_2))
+
+empty_tuple=()
+print("empty_tuple:",empty_tuple)
+print("type of empty_tuple:",type(empty_tuple))
+one_element_tuple_1=(1,)
+print("one_element_tuple_1:",one_element_tuple_1)
+print("type of one_element_tuple_1:",type(one_element_tuple_1))
+one_element_tuple_2=1,
+print("one_element_tuple_2:",one_element_tuple_2)
+print("type of one_element_tuple_2:",type(one_element_tuple_2))
+'''
+
+'''my_tuple=(1,10,100,1000)
+
+#my_tuple.append(10000) #AttributError
+#del my_tuple[0]  #TypeError-doesn't support item deletion
+#my_tuple[1]=-10  #TypeError-doesn't support item assignment
+'''
+'''
+my_tuple=(1,10,100,1000)
+print(len(my_tuple))
+'''
+'''
++ operator & * operator
+
+my_tuple=(1,)
+my_tuple_2=(2,)
+my_new_tuple=my_tuple+my_tuple_2
+print(my_new_tuple)
+
+my_new_tuple=my_tuple_2*2
+print(my_new_tuple)
+
+my_tuple_3=("A",2,False)
+print(my_tuple_3)
+'''
+#in &not in operators
+'''
+my_tuple=(1,10,100)
+
+t1=my_tuple+(1000,10000)
+t2=my_tuple*3
+
+print(len(t2))
+print(t1)
+print(t2)
+print(10 in my_tuple)
+print(-10 not in my_tuple)
+'''
+'''
+#Example  1
+tuple_1=(1,2,3)
+for element in tuple_1:
+    print(element)
+print('-----')
+#Example 2
+tuple_2=(1,2,3,4)
+print(5 in tuple_2)
+print(5 not in tuple_2)
+#Example 3
+tuple_3=(1,2,3,4)
+print(len(tuple_3))
+print(5 not in tuple_3)
+#Example 4
+tuple_4=tuple_1+tuple_2
+tuple_5=tuple_3*2
+print(tuple_4)
+print(tuple_5)
+#Example 5
+print(tuple_5[0])
+print(tuple_5[1])
+'''
+'''
+#Type Conversion
+
+my_tuple=tuple((1,2,"string"))
+print(my_tuple)
+
+my_list=[2,4,6]
+print(my_list)
+print(type(my_list))
+tup=tuple(my_list)
+print(tup)
+print(type(tup))
+'''
+'''
+#circulation/swapping in tuple
+var=123
+t1=1,
+t2=2,
+t3=3,var
+t1,t2,t3=t2,t3,t1
+print(t1,t2,t3)
+'''
+#DICTIONARIES
+
+#Unordered,changeable,indexed collections
