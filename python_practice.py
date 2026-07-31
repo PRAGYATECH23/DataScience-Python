@@ -1348,6 +1348,7 @@ print(t1,t2,t3)
 #DICTIONARIES
 
 #Unordered,changeable,indexed collections
+#29/07/2026  Wednesday
 '''
 dictionary={
     "cat":"chat",
@@ -1436,7 +1437,7 @@ print(dict[3])'''
 #Copying a dictionary
 #copy() function doesn't copy reference 
 #whereas assignment copies the reference so if we change the element in one dictionary it will also change in the assigned dictionary
-
+'''
 pol_eng_dictionary={
     "zamek":"castle",
     "woda":"water",
@@ -1453,7 +1454,7 @@ print(pol_eng_dictionary)
 print(pol_eng_dictionary_copy)
 print(pol_eng_dictionary_copy2)
 
-pol_eng_dictionary["zamek"]="lock" 
+pol_eng_dictionary["zamek"]="lock"   #moifying and adding value
 item=pol_eng_dictionary["zamek"]
 print(item)
 print("pol_eng_dictionary:",pol_eng_dictionary)
@@ -1461,4 +1462,106 @@ del pol_eng_dictionary["zamek"]
 print("pol_eng_dictionary:",pol_eng_dictionary)
 
 #Fundamental concepts 
-#CRUD =Create | Retrieve |  Update  |Delete
+#CRUD = Create | Retrieve | Update  | Delete
+'''
+
+#30/07/2026  Thursday
+
+#popitem() method &  update () method
+'''
+pol_eng_dictionary = {"gleba":"soil"}
+
+pol_eng_dictionary.update({"kwiat":"flower"})
+print(pol_eng_dictionary)  #{'gleba': 'soil', 'kwiat': 'flower'}
+
+#pol_eng_dictionary.popitem()
+#print(pol_eng_dictionary)  #{'gleba': 'soil'}
+
+for key,value in pol_eng_dictionary.items():
+    print(key,"->",value)
+'''
+
+#clear() method
+'''
+pol_eng_dictionary={
+    "zamek":"castle",
+    "woda":"water",
+    "gleba":"soil"
+}
+
+print(len(pol_eng_dictionary))  #3
+del pol_eng_dictionary["zamek"]
+print(len(pol_eng_dictionary))  #2
+pol_eng_dictionary.clear()
+print(len(pol_eng_dictionary))#0
+print(pol_eng_dictionary)  #{}
+del pol_eng_dictionary
+print(pol_eng_dictionary)  #NameError
+'''
+#Tuples and dictionaries can work together
+
+'''
+Enter Student's name:Pragya
+Enter Pragya's score
+'''
+'''
+name=input("Enter Student's name:")
+marks=input("Enter Student's marks:")
+list=[
+    {name:"Pragya",
+     marks:(95,98)},
+    {name:"Shishir",
+     marks:(88,99)},
+    {name:"Prachi",
+     marks:(88,83)}
+]
+for i in range(len(list)):
+    print(list[i])
+    avg= 
+    print(name,"'s Average score:",avg)
+'''
+
+'''
+{"Pragya":(99,88),
+"Shishir":(77,67)
+}
+'''
+'''
+dictionary={}
+while True:
+    name=input("Enter Student's name:")
+    if name!="":
+        mark=float(input(f"Enter {name}'s score:"))
+        if name not in dictionary:
+            dictionary.update({name:(mark,)})
+        else:
+            dictionary[name]+=(mark,)
+    else:
+        break
+for name,marks in dictionary.items():
+    sum=0
+    for mark in marks:
+        sum+=mark
+    print(f"{name}'s Average score is :{sum/len(marks)}")
+'''
+#dict(colors)
+
+
+#31/07/2026   Friday
+'''
+OBJECT OREIENTED PROGRAMMING
+
+BASIC CONCEPTS OF OOPS:
+1.ENCAPSULATION
+2.INHERITANCE
+3.POLYMORPHISM
+4.ABSTRACTION
+'''
+
+
+
+
+
+
+
+
