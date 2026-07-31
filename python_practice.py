@@ -1238,6 +1238,7 @@ def mult(x):
 print(mult_by_var(7))
 '''
 
+#28/07/2026  Tuesday
 
 #28/07/2026  Tuesday
 
@@ -1565,3 +1566,110 @@ BASIC CONCEPTS OF OOPS:
 
 
 
+#************TUPLES****************
+
+#immutable,parenthesis,commas is must,all datatypes are acceptable
+'''
+tuple_1=(1,2,4,8)
+tuple_2=1.,.5,.25,.125
+print("tuple_1:",tuple_1)
+print("type of tuple_1:",type(tuple_1))
+print("tuple_2:",tuple_2)
+print("type of tuple_2:",type(tuple_2))
+
+empty_tuple=()
+print("empty_tuple:",empty_tuple)
+print("type of empty_tuple:",type(empty_tuple))
+one_element_tuple_1=(1,)
+print("one_element_tuple_1:",one_element_tuple_1)
+print("type of one_element_tuple_1:",type(one_element_tuple_1))
+one_element_tuple_2=1,
+print("one_element_tuple_2:",one_element_tuple_2)
+print("type of one_element_tuple_2:",type(one_element_tuple_2))
+'''
+
+'''my_tuple=(1,10,100,1000)
+
+#my_tuple.append(10000) #AttributError
+#del my_tuple[0]  #TypeError-doesn't support item deletion
+#my_tuple[1]=-10  #TypeError-doesn't support item assignment
+'''
+'''
+my_tuple=(1,10,100,1000)
+print(len(my_tuple))
+'''
+'''
++ operator & * operator
+
+my_tuple=(1,)
+my_tuple_2=(2,)
+my_new_tuple=my_tuple+my_tuple_2
+print(my_new_tuple)
+
+my_new_tuple=my_tuple_2*2
+print(my_new_tuple)
+
+my_tuple_3=("A",2,False)
+print(my_tuple_3)
+'''
+#in &not in operators
+'''
+my_tuple=(1,10,100)
+
+t1=my_tuple+(1000,10000)
+t2=my_tuple*3
+
+print(len(t2))
+print(t1)
+print(t2)
+print(10 in my_tuple)
+print(-10 not in my_tuple)
+'''
+'''
+#Example  1
+tuple_1=(1,2,3)
+for element in tuple_1:
+    print(element)
+print('-----')
+#Example 2
+tuple_2=(1,2,3,4)
+print(5 in tuple_2)
+print(5 not in tuple_2)
+#Example 3
+tuple_3=(1,2,3,4)
+print(len(tuple_3))
+print(5 not in tuple_3)
+#Example 4
+tuple_4=tuple_1+tuple_2
+tuple_5=tuple_3*2
+print(tuple_4)
+print(tuple_5)
+#Example 5
+print(tuple_5[0])
+print(tuple_5[1])
+'''
+'''
+#Type Conversion
+
+my_tuple=tuple((1,2,"string"))
+print(my_tuple)
+
+my_list=[2,4,6]
+print(my_list)
+print(type(my_list))
+tup=tuple(my_list)
+print(tup)
+print(type(tup))
+'''
+'''
+#circulation/swapping in tuple
+var=123
+t1=1,
+t2=2,
+t3=3,var
+t1,t2,t3=t2,t3,t1
+print(t1,t2,t3)
+'''
+#DICTIONARIES
+
+#Unordered,changeable,indexed collections
