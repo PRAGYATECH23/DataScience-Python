@@ -1187,10 +1187,384 @@ if value=="":
 print(value)
 print(type(value))
 '''
+'''
+def strange_function(n):
+    if n%2==0:
+        return True
+print(strange_function(2))  #True
+print(strange_function(1))  #None
+'''
+'''
+def list_sum(lst):
+    s=0
+    for element in lst:
+        s+=element
+    return s
+print(list_sum([5,4,3]))  #12
+'''
+'''
+def strange_list_fun(n):
+    strange_list=[]
 
+    for i in range(0,n):
+        strange_list.insert(0,i)
 
+    return strange_list
+print(strange_list_fun(5))  #[4, 3, 2, 1, 0]
+'''
+#27/07/2026    Monday
+'''
+def scope_test():
+    x=123   #local scope
+scope_test()
+print(x)  #NameError
+'''
+'''
+def my_function():
+    print("Do I know that variable?",var) #Do I know that variable? 1
+var=1
+my_function()
+print(var) #1
+'''
+'''
+var=2
+def mult_by_var(x):
+    return x*var
+print(mult_by_var(7))
+
+def mult(x):
+    var=5  #shadowing var in local scope
+    return x*var
+print(mult_by_var(7))
+'''
 
 #28/07/2026  Tuesday
+
+#28/07/2026  Tuesday
+
+#************TUPLES****************
+
+#immutable,parenthesis,commas is must,all datatypes are acceptable
+'''
+tuple_1=(1,2,4,8)
+tuple_2=1.,.5,.25,.125
+print("tuple_1:",tuple_1)
+print("type of tuple_1:",type(tuple_1))
+print("tuple_2:",tuple_2)
+print("type of tuple_2:",type(tuple_2))
+
+empty_tuple=()
+print("empty_tuple:",empty_tuple)
+print("type of empty_tuple:",type(empty_tuple))
+one_element_tuple_1=(1,)
+print("one_element_tuple_1:",one_element_tuple_1)
+print("type of one_element_tuple_1:",type(one_element_tuple_1))
+one_element_tuple_2=1,
+print("one_element_tuple_2:",one_element_tuple_2)
+print("type of one_element_tuple_2:",type(one_element_tuple_2))
+'''
+
+'''my_tuple=(1,10,100,1000)
+
+#my_tuple.append(10000) #AttributError
+#del my_tuple[0]  #TypeError-doesn't support item deletion
+#my_tuple[1]=-10  #TypeError-doesn't support item assignment
+'''
+'''
+my_tuple=(1,10,100,1000)
+print(len(my_tuple))
+'''
+'''
++ operator & * operator
+
+my_tuple=(1,)
+my_tuple_2=(2,)
+my_new_tuple=my_tuple+my_tuple_2
+print(my_new_tuple)
+
+my_new_tuple=my_tuple_2*2
+print(my_new_tuple)
+
+my_tuple_3=("A",2,False)
+print(my_tuple_3)
+'''
+#in &not in operators
+'''
+my_tuple=(1,10,100)
+
+t1=my_tuple+(1000,10000)
+t2=my_tuple*3
+
+print(len(t2))
+print(t1)
+print(t2)
+print(10 in my_tuple)
+print(-10 not in my_tuple)
+'''
+'''
+#Example  1
+tuple_1=(1,2,3)
+for element in tuple_1:
+    print(element)
+print('-----')
+#Example 2
+tuple_2=(1,2,3,4)
+print(5 in tuple_2)
+print(5 not in tuple_2)
+#Example 3
+tuple_3=(1,2,3,4)
+print(len(tuple_3))
+print(5 not in tuple_3)
+#Example 4
+tuple_4=tuple_1+tuple_2
+tuple_5=tuple_3*2
+print(tuple_4)
+print(tuple_5)
+#Example 5
+print(tuple_5[0])
+print(tuple_5[1])
+'''
+'''
+#Type Conversion
+
+my_tuple=tuple((1,2,"string"))
+print(my_tuple)
+
+my_list=[2,4,6]
+print(my_list)
+print(type(my_list))
+tup=tuple(my_list)
+print(tup)
+print(type(tup))
+'''
+'''
+#circulation/swapping in tuple
+var=123
+t1=1,
+t2=2,
+t3=3,var
+t1,t2,t3=t2,t3,t1
+print(t1,t2,t3)
+'''
+#DICTIONARIES
+
+#Unordered,changeable,indexed collections
+#29/07/2026  Wednesday
+'''
+dictionary={
+    "cat":"chat",
+    "dog":"chien",
+    "horse":"cheval"
+}
+phone_numbers={
+    'boss':5551234567,
+    'Suzy':22657854310
+}
+empty_dictionary={}
+
+print("dictionary:",dictionary)
+print("type(dictionary):",type(dictionary))
+print("phone_numbers:",phone_numbers)
+print("type(phone_numbers):",type(phone_numbers))
+print("empty_dictionary:",empty_dictionary)
+print("type(empty_dictionary):",type(empty_dictionary))
+
+
+#Accessing the values of key in dictionary
+print(dictionary["cat"])
+print(dictionary["dog"])
+'''
+'''
+cat="CatKey"
+dog="DogKey"
+my_dictionary={
+    cat:'Cat',
+    dog:'Dog'
+}
+print(my_dictionary)
+print(my_dictionary[cat])
+print(type(my_dictionary[cat]))
+print(my_dictionary["horse"])  #KeyError
+print(my_dictionary["CatKey"]) 
+'''
+'''dictionary={
+    "cat":"chat",
+    "dog":"chien",
+    "horse":"cheval"
+}
+keys=['cat','lion','horse'] #we made list explicitly
+for key in keys:
+    if key in dictionary:
+        print(key,"->",dictionary[key])
+    else:
+        print(key,"is not in dictionary")
+'''
+'''
+dictionary={
+    "cat":"chat",
+    "dog":"chien",
+    "horse":"cheval"
+}
+
+#keys() method
+for key in dictionary.keys():
+    print(key)  #accessing keys
+    print(dictionary[key])  #accessing values
+    if key in dictionary:
+        print(key,"->",dictionary[key])
+    else:
+        print(key,"is not in dictionary")
+'''
+'''
+#items() method - returns tuples
+dictionary={
+    "cat":"chat",
+    "dog":"chien",
+    "horse":"cheval"
+}
+print(dictionary.items())  #dict_items([('cat', 'chat'), ('dog', 'chien'), ('horse', 'cheval')])
+print(type(dictionary.items()))     #<class 'dict_items'>
+for english , french in dictionary.items():
+    print(english,"->",french)
+
+#values() method
+for french in dictionary.values():
+    print(french)
+'''
+'''
+dict={1:3,2:1,3:2}
+print(dict[3])'''
+
+#Copying a dictionary
+#copy() function doesn't copy reference 
+#whereas assignment copies the reference so if we change the element in one dictionary it will also change in the assigned dictionary
+'''
+pol_eng_dictionary={
+    "zamek":"castle",
+    "woda":"water",
+    "gleba":"soil"
+}
+pol_eng_dictionary_copy=pol_eng_dictionary
+pol_eng_dictionary_copy2=pol_eng_dictionary.copy()
+print(pol_eng_dictionary)
+print(pol_eng_dictionary_copy)
+print(pol_eng_dictionary_copy2)
+
+pol_eng_dictionary["One"]=1
+print(pol_eng_dictionary)
+print(pol_eng_dictionary_copy)
+print(pol_eng_dictionary_copy2)
+
+pol_eng_dictionary["zamek"]="lock"   #moifying and adding value
+item=pol_eng_dictionary["zamek"]
+print(item)
+print("pol_eng_dictionary:",pol_eng_dictionary)
+del pol_eng_dictionary["zamek"]
+print("pol_eng_dictionary:",pol_eng_dictionary)
+
+#Fundamental concepts 
+#CRUD = Create | Retrieve | Update  | Delete
+'''
+
+#30/07/2026  Thursday
+
+#popitem() method &  update () method
+'''
+pol_eng_dictionary = {"gleba":"soil"}
+
+pol_eng_dictionary.update({"kwiat":"flower"})
+print(pol_eng_dictionary)  #{'gleba': 'soil', 'kwiat': 'flower'}
+
+#pol_eng_dictionary.popitem()
+#print(pol_eng_dictionary)  #{'gleba': 'soil'}
+
+for key,value in pol_eng_dictionary.items():
+    print(key,"->",value)
+'''
+
+#clear() method
+'''
+pol_eng_dictionary={
+    "zamek":"castle",
+    "woda":"water",
+    "gleba":"soil"
+}
+
+print(len(pol_eng_dictionary))  #3
+del pol_eng_dictionary["zamek"]
+print(len(pol_eng_dictionary))  #2
+pol_eng_dictionary.clear()
+print(len(pol_eng_dictionary))#0
+print(pol_eng_dictionary)  #{}
+del pol_eng_dictionary
+print(pol_eng_dictionary)  #NameError
+'''
+#Tuples and dictionaries can work together
+
+'''
+Enter Student's name:Pragya
+Enter Pragya's score
+'''
+'''
+name=input("Enter Student's name:")
+marks=input("Enter Student's marks:")
+list=[
+    {name:"Pragya",
+     marks:(95,98)},
+    {name:"Shishir",
+     marks:(88,99)},
+    {name:"Prachi",
+     marks:(88,83)}
+]
+for i in range(len(list)):
+    print(list[i])
+    avg= 
+    print(name,"'s Average score:",avg)
+'''
+
+'''
+{"Pragya":(99,88),
+"Shishir":(77,67)
+}
+'''
+'''
+dictionary={}
+while True:
+    name=input("Enter Student's name:")
+    if name!="":
+        mark=float(input(f"Enter {name}'s score:"))
+        if name not in dictionary:
+            dictionary.update({name:(mark,)})
+        else:
+            dictionary[name]+=(mark,)
+    else:
+        break
+for name,marks in dictionary.items():
+    sum=0
+    for mark in marks:
+        sum+=mark
+    print(f"{name}'s Average score is :{sum/len(marks)}")
+'''
+#dict(colors)
+
+
+#31/07/2026   Friday
+'''
+OBJECT OREIENTED PROGRAMMING
+
+BASIC CONCEPTS OF OOPS:
+1.ENCAPSULATION
+2.INHERITANCE
+3.POLYMORPHISM
+4.ABSTRACTION
+'''
+
+
+
+
+
+
+
 
 #************TUPLES****************
 
