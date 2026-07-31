@@ -1,5 +1,11 @@
-for building_index in range(len(rooms)):
-#     print("Building:",building_index+1)
-#     for floor_index in range(len(rooms[building_index])):
-#         print("Floor:",floor_index+1)
-#         print(rooms[building_index][floor_index])
+
+# blocks=int(input("Enter the number of blocks:"))
+# counter=0
+# height=0
+
+# while (blocks -counter>0):
+#     counter+=1
+#     blocks=blocks-counter
+
+# print("Height of the pyramid:",counter)
+# print(f'Height of the pyramid:{counter}qifeb{blocks}')

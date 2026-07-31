@@ -565,7 +565,6 @@ iteration based for loop
 # del lst
 # print(lst)
 
-#14/07/26    Tuesday
 #bubble sort
 
 # list=[8,10,6,2,4]
@@ -605,126 +604,25 @@ index      index_inner      sorted_list
 '''best case- sorted list
 worst case -descending order of list
 '''
-# list=[1,2,3,4,5]
-# print(list)
-# count=0
-# swapped=False
-# for index in range(len(list)-1):
-#     #for index_inner in range(len(list)-1):
-#     for index_inner in range(len(list)-1-index):
-#         count+=1
-#         if list[index_inner]>list[index_inner+1]:
-#             list[index_inner],list[index_inner+1]=list[index_inner+1],list[index_inner]
-#             swapped=True
-#     if not swapped:
-#         break
+list=[1,2,3,4,5]
+print(list)
+count=0
+swapped=False
+for index in range(len(list)-1):
+    #for index_inner in range(len(list)-1):
+    for index_inner in range(len(list)-1-index):
+        count+=1
+        if list[index_inner]>list[index_inner+1]:
+            list[index_inner],list[index_inner+1]=list[index_inner+1],list[index_inner]
+            swapped=True
+    if not swapped:
+        break
 
-# print("Sorted List:",list)
-# print("my loop is running for",count,"times")
-
-#
-# list=[8,10,6,2,4]
-# #list.sort()
-# list=sorted(list)
-# print(list)
-
-# list.reverse()
-# print(list)
-
-# lst=['D','F','A','Z']
-# lst.sort()
-# print(lst)
-
-# a=3
-# b=1
-# c=2
-# lst=[a,c,b]
-# lst.sort()
-# print(lst)
-
-# print(ord("A"))
-
-# list_1=[1]
-# list_2=list_1[:]
-# list_1[0]=2
-# print(list_2)
-
-# my_list=[10,8,6,4,2]
-# new_list=my_list[0:3]
-# print(new_list)
+print("Sorted List:",list)
+print("my loop is running for",count,"times")
 
 
-# my_list=[10,8,6,4,2]
-# new_list=my_list[1:-1]
-# print(new_list)
 
-
-# my_list=[10,8,6,4,2]
-# new_list=my_list[-1:1]
-# print(new_list)
-
-
-# my_list=[10,8,6,4,2]
-# new_list=my_list[:3]
-# print(new_list)
-
-
-# my_list=[10,8,6,4,2]
-# del my_list[1:3]
-# print(new_list)
-
-
-# my_list=[10,8,6,4,2]
-# del my_list[:]
-# print(my_list)
-
-
-# my_list=[10,8,6,4,2]
-# del my_list
-# print(my_list)
-
-# my_list=[0,3,12,8,2]
-# print(5 in my_list)
-# print(5 not in my_list)
-# print(12 in my_list)
-
-# lst = [ 3, 11, 5, 1,17, 9, 7, 15, 13]
-# largest_num=lst[0]
-# for i in range(1,len(lst)):
-#     if lst[i]>largest_num:
-#         largest_num=lst[i]
-# print("The largest no. is",largest_num)
-
-list_1=["A","B","C"]
-list_2=list_1
-list_3=list_2
-del list_1[0]
-del list_2[0]
-print(list_3)
-
-list_1=["A","B","C"]
-list_2=list_1
-list_3=list_2
-del list_1[0]
-del list_2
-print(list_3)
-
-list_1=["A","B","C"]
-list_2=list_1
-list_3=list_2
-del list_1[0]
-del list_2[:]
-print(list_3)
-
-
-list_1=["A","B","C"]
-list_2=list_1[:]
-list_3=list_2[:]
-del list_1[0]
-del list_2[0]
-print(list_1)
-print(list_2)
-print(list_3)
 
 
 
